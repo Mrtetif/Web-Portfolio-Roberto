@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+
+.hero {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  align-items: center;
+}
+
+.avatar {
+  width: 10rem;
+  max-width: 100%;
+}
+
+.hero-foot {
+  max-width: 100%;
+}
