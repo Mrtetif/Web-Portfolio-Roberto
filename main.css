@@ -1,3 +1,10 @@
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0 auto;
+}
+
+/*This is the header*/
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -18,4 +25,30 @@
 
 .hero-foot {
   max-width: 100%;
+}
+
+/*This the Introduction*/
+
+.introduciton {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  align-content: center;
+}
+
+.title-introduction {
+  padding: 3rem 2rem;
+  background-color: #ffab4c;
+}
+
+.title-introduction p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 170%;
+}
+
+/*This is !IMPORTANT*/
+
+.center {
+  text-align: center !important;
 }
