@@ -24,6 +24,7 @@ body {
 }
 
 .hero-foot {
+  width: 36rem;
   max-width: 100%;
 }
 
@@ -37,7 +38,8 @@ body {
 }
 
 .title-introduction {
-  padding: 3rem 2rem;
+  padding: 4rem 2rem;
+  padding-bottom: 10rem;
   background-color: #ffab4c;
 }
 
@@ -47,7 +49,88 @@ body {
   line-height: 170%;
 }
 
+/*This is Skills*/
+
+.skills {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 1rem;
+}
+
+.skills div {
+  width: 18.5rem;
+  height: 26rem;
+  background-color: #16213e;
+  border-radius: 1rem;
+  padding: 4rem 1rem;
+  margin-top: -6rem;
+}
+
+.skills h3 {
+  font-size: 1.5rem;
+  color: #ffab4c;
+}
+
+.skills h4 {
+  font-size: 1rem;
+  color: #ffab4c;
+}
+
+.skills p {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.skills ul {
+  list-style-type: none;
+  padding: 0 0 0 0;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.skills li {
+  margin: 0.5rem auto;
+}
+
+.skills span {
+  display: flex;
+  flex-flow: column;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  color: #16213e;
+}
+
+/*This is Development*/
+
+.development {
+  border-top: 1px solid #e3e5ea;
+  box-shadow: inset 0px 1px 10px #e3e5ea;
+}
+
+/*Utilities*/
+
+.btn {
+  width: 7rem;
+  height: 2.75rem;
+  margin: 0 auto;
+  border-radius: 2rem;
+  border: 2px solid #e94560;
+  background-color: #ffffff;
+  color: #e94560;
+}
+
 /*This is !IMPORTANT*/
+.btn-secondary {
+  width: 7rem;
+  height: 2.75rem;
+  border-radius: 2rem;
+  border: 2px solid #ffab4c;
+  background-color: #ffffff;
+  color: #ffab4c;
+}
 
 .center {
   text-align: center !important;
