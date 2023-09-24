@@ -101,7 +101,7 @@ body {
 }
 
 .skills span {
-  flex-basis: 45rem;
+  flex-basis: 100%;
   margin-top: 3rem;
   margin-bottom: 5rem;
 }
