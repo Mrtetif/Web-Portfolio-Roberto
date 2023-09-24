@@ -51,6 +51,11 @@ body {
 
 /*This is Skills*/
 
+.skills-container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
 .skills {
   display: flex;
   flex-flow: row wrap;
@@ -60,7 +65,8 @@ body {
 }
 
 .skills div {
-  width: 18.5rem;
+  flex: 2;
+  min-width: 18rem;
   height: 26rem;
   background-color: #16213e;
   border-radius: 1rem;
@@ -95,11 +101,12 @@ body {
 }
 
 .skills span {
-  display: flex;
-  flex-flow: column;
-  gap: 1.5rem;
+  flex-basis: 45rem;
   margin-top: 3rem;
   margin-bottom: 5rem;
+}
+
+.skills span > p {
   color: #16213e;
 }
 
