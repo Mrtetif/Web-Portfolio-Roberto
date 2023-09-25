@@ -8,7 +8,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 1rem;
+  padding: 2rem 10%;
 }
 
 .hero {
@@ -18,9 +18,20 @@ body {
   align-items: center;
 }
 
+.hero > h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero > p {
+  font-size: 1.25rem;
+  margin: 0 0 1rem 0;
+}
+
 .avatar {
   width: 10rem;
   max-width: 100%;
+  margin: 3rem 0;
 }
 
 .hero-foot {
@@ -30,22 +41,27 @@ body {
 
 /*This the Introduction*/
 
-.introduciton {
+.introduction {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 10rem;
+  background-color: #ffab4c;
+}
+
+.title-introduction {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   align-content: center;
 }
 
-.title-introduction {
-  padding: 4rem 2rem;
-  padding-bottom: 10rem;
-  background-color: #ffab4c;
-}
-
 .title-introduction p {
+  max-width: 65ch;
+  min-width: 18rem;
+  padding: 0 2rem;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 170%;
 }
 
@@ -112,9 +128,69 @@ body {
 
 /*This is Development*/
 
-.development {
+.container-development {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
   border-top: 1px solid #e3e5ea;
   box-shadow: inset 0px 1px 10px #e3e5ea;
+}
+
+.title-development {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  align-content: center;
+}
+
+.title-development p {
+  margin: 0 auto;
+  padding-bottom: 3.5rem;
+}
+
+.development {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.services {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 3.5rem;
+}
+
+.services img {
+  width: 100%;
+}
+
+.card div {
+  background-color: #16213e;
+  min-width: 16rem;
+  max-width: min-content;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  height: auto;
+  border-radius: 1rem;
+}
+
+@media only screen and (max-width: 1101px) {
+  .card div {
+    max-width: max-content;
+  }
+}
+
+.card h3 {
+  margin: 0;
+  padding-bottom: 1.25rem;
+  color: #e94560;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1rem;
+  color: #e3e5ea;
 }
 
 /*Utilities*/
