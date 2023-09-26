@@ -19,7 +19,7 @@ body {
 }
 
 .hero > h1 {
-  font-size: 2rem;
+  font-size: 2.25rem;
   margin-bottom: 1rem;
 }
 
@@ -193,6 +193,55 @@ body {
   color: #e3e5ea;
 }
 
+/*This is Recent Work*/
+.container-work {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.work {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: 1.25rem;
+  margin-top: -6rem;
+}
+
+@media (min-width: 1152px) and (max-width: 1920px) {
+  .work {
+    grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
+    justify-content: center;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 1152px) {
+  .work {
+    grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
+    justify-content: center;
+  }
+}
+
+.work div {
+  height: 18rem;
+  background-color: #e3e5ea;
+  border-radius: 1rem;
+}
+
+.container-work span {
+  display: block;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+
+.container-work span > h3 {
+  font-size: 1.25rem;
+  color: #16213e;
+}
+
+.container-work span > p {
+  margin-bottom: 3rem;
+  color: #16213e;
+}
+
 /*Utilities*/
 
 .btn {
@@ -203,6 +252,16 @@ body {
   border: 2px solid #e94560;
   background-color: #ffffff;
   color: #e94560;
+}
+
+.btn a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #e94560;
+}
+
+.l {
+  width: 14rem;
 }
 
 /*This is !IMPORTANT*/
