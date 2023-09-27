@@ -3,6 +3,12 @@ body {
   margin: 0 auto;
 }
 
+blockquote {
+  font-size: 0.75rem;
+  padding: 0;
+  margin: 0;
+}
+
 /*This is the header*/
 
 .header {
@@ -20,6 +26,7 @@ body {
 
 .hero > h1 {
   font-size: 2.25rem;
+  padding: 0 1rem;
   margin-bottom: 1rem;
 }
 
@@ -54,6 +61,11 @@ body {
   flex-flow: column wrap;
   align-items: center;
   align-content: center;
+}
+
+.title-introduction h2 {
+  padding: 0 1rem;
+  margin: 2rem 0 0.25rem 0;
 }
 
 .title-introduction p {
@@ -132,7 +144,7 @@ body {
   width: 100%;
   margin: 0 auto;
   padding-top: 5rem;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
   border-top: 1px solid #e3e5ea;
   box-shadow: inset 0px 1px 10px #e3e5ea;
 }
@@ -228,8 +240,7 @@ body {
 
 .container-work span {
   display: block;
-  margin-top: 4rem;
-  margin-bottom: 6rem;
+  margin: 8rem 0;
 }
 
 .container-work span > h3 {
@@ -240,6 +251,38 @@ body {
 .container-work span > p {
   margin-bottom: 3rem;
   color: #16213e;
+}
+
+/*This is Testimonials*/
+
+.circle {
+  width: 5rem;
+  height: 5rem;
+  margin-top: 3.5rem;
+  background-color: #e3e5ea;
+  border-radius: 50%;
+}
+
+.comments h4 {
+  margin: 1rem 0;
+}
+
+.comments p {
+  margin: 3rem 1rem;
+}
+
+/*This is Footer*/
+
+.footer-container {
+  width: 100%;
+  height: 35rem;
+  background-color: #ffab4c;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+}
+
+.footer {
 }
 
 /*Utilities*/
@@ -264,7 +307,6 @@ body {
   width: 14rem;
 }
 
-/*This is !IMPORTANT*/
 .btn-secondary {
   width: 7rem;
   height: 2.75rem;
@@ -273,6 +315,7 @@ body {
   background-color: #ffffff;
   color: #ffab4c;
 }
+/*This is !IMPORTANT*/
 
 .center {
   text-align: center !important;
