@@ -187,9 +187,29 @@ blockquote {
   border-radius: 1rem;
 }
 
-@media only screen and (max-width: 1101px) {
+@media (min-width: 729px) and (max-width: 1101px) {
+  .card {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+  }
+
   .card div {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 729px) {
+  .card {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+  }
+
+  .card div {
+    display: block;
     max-width: max-content;
+    margin-bottom: 0;
   }
 }
 
@@ -218,7 +238,7 @@ blockquote {
   margin-top: -6rem;
 }
 
-@media (min-width: 1152px) and (max-width: 1920px) {
+@media (min-width: 1440px) and (max-width: 1920px) {
   .work {
     grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
     justify-content: center;
@@ -227,7 +247,7 @@ blockquote {
 
 @media (min-width: 450px) and (max-width: 1152px) {
   .work {
-    grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
     justify-content: center;
   }
 }
@@ -261,6 +281,10 @@ blockquote {
   margin-top: 3.5rem;
   background-color: #e3e5ea;
   border-radius: 50%;
+}
+
+.comments {
+  margin-bottom: 5rem;
 }
 
 .comments h4 {
