@@ -35,10 +35,29 @@ blockquote {
   margin: 0 0 1rem 0;
 }
 
+.header-contact {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 10%;
+  border-bottom: 1px solid #e3e5ea;
+}
+
+.hero-contact > h1 {
+  font-weight: 300;
+  font-size: 2.25rem;
+  margin-top: 3rem;
+}
+
 .avatar {
   width: 10rem;
   max-width: 100%;
   margin: 3rem 0;
+}
+
+.avatar-contact {
+  width: 5.5rem;
+  max-width: 100%;
+  margin-top: -3.5rem;
 }
 
 .hero-foot {
@@ -341,6 +360,13 @@ blockquote {
   margin-top: -10rem;
   background-color: #16213e;
   border-radius: 1rem;
+}
+
+/*This is Contact*/
+
+.form {
+  display: flex;
+  justify-content: center;
 }
 
 /*Utilities*/

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./index.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("cstkj5YTnoxtAS4Vb");
+      })();
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="header-contact">
+        <img src="./assets/img/svg/logo.svg" alt="Rob Logo" />
+        <a href=""><button class="btn-secondary">Say Hello</button></a>
+      </div>
+    </header>
+    <section class="hero-contact center">
+      <img
+        class="avatar-contact"
+        src="./assets/img/svg/Avatar.svg"
+        alt="Rob Avatar"
+      />
+      <h1>Coffee is on me!</h1>
+    </section>
+    <form class="form">
+      <div class="form-group">
+        <h5 for="name">Name</h5>
+        <br />
+        <input id="name" class="form-control" type="text" required />
+      </div>
+      <div class="form-group">
+        <h5 for="email">Email</h5>
+        <br />
+        <input id="email" class="form-control" type="text" required />
+      </div>
+      <div class="form-group">
+        <h5 for="message">Message</h5>
+        <br />
+        <textarea
+          type="text"
+          id="message"
+          class="form-control"
+          cols="60"
+          rows="15"
+          required
+        >
+        </textarea>
+      </div>
+      <button class="btn l center" onclick="sendMail()">submit</button>
+    </form>
+  </body>
+</html>
