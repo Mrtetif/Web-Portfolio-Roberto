@@ -9,9 +9,10 @@ blockquote {
   margin: 0;
 }
 
-label {
+h5 {
+  color: #16213e;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 /*This is the header*/
@@ -369,52 +370,72 @@ label {
 
 /*This is Contact*/
 
-/* .form-container {
-  max-width: 100%;
+.form-container {
+  width: 90%;
   margin: 0 auto;
+  margin-top: 4rem;
   padding: 0 1rem;
 }
 
 .form {
-  width: 100%;
-  margin: 0 auto;
-  margin-bottom: 3.5rem;
-}
-
-.form div:nth-child(2) > textarea {
-  max-width: 80%;
-  min-width: 18rem;
-  font-size: 1.25rem;
-  border: 1px solid #e3e5ea;
-  margin-bottom: 3rem;
-  padding: 0.5rem 0.5rem;
+  vertical-align: baseline;
+  width: 40rem;
+  margin: 4rem auto 0;
 }
 
 .form-group {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: center;
-  margin: 0 auto;
+  gap: 2rem;
 }
 
-.form-group div:nth-child(n - 2) > input {
+.column {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  gap: 0;
+}
+
+.form-group div {
+  flex: none;
+  max-width: 38rem;
+  min-width: 18rem;
+}
+
+@media only screen and (max-width: 675px) {
+  .form-group {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 0;
+  }
+  .form-group div {
+    flex: 2;
+  }
+}
+
+.form-group div > input {
   height: 2rem;
   font-size: 1.25rem;
   border: 1px solid #e3e5ea;
-  padding: 0.5rem 0.5rem;
-  margin: 0 1rem;
-}
-
-.form-control {
-  display: block;
-  flex: none;
   padding: 0.75rem;
+  margin-bottom: 1rem;
+  width: calc(100% - 1.5rem);
 }
 
-.form-control input {
-  max-width: 100%;
-  width: 100%;
-} */
+.form-group div > textarea {
+  font-size: 1.25rem;
+  border: 1px solid #e3e5ea;
+  padding: 0.75rem;
+  margin-bottom: 5rem;
+  width: calc(100% - 1.5rem);
+}
+
+.form-name h5 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
 
 /*Utilities*/
 
