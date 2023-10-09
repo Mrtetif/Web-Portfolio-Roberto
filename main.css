@@ -50,7 +50,7 @@ h5 {
 
 .hero-contact > h1 {
   font-weight: 300;
-  font-size: 2.25rem;
+  font-size: 2rem;
   margin-top: 3rem;
 }
 
@@ -303,7 +303,7 @@ h5 {
 .circle {
   width: 5rem;
   height: 5rem;
-  margin-top: 3.5rem;
+  margin-top: 3rem;
   background-color: #e3e5ea;
   border-radius: 50%;
 }
@@ -313,11 +313,12 @@ h5 {
 }
 
 .comments h4 {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
 }
 
 .comments p {
-  margin: 3rem 1rem;
+  font-weight: 500;
+  margin: 1.25rem 1rem;
 }
 
 /*This is Footer*/
@@ -435,6 +436,23 @@ h5 {
 .form-name h5 {
   margin-top: 0;
   margin-bottom: 0.75rem;
+}
+
+.icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #16213e;
+  border: 2px solid #16213e;
+  width: 3rem;
+  height: 3rem;
+  margin: 3rem 0.5rem;
+}
+
+.icon:hover {
+  background-color: #16213e;
+  color: #ffab4c;
 }
 
 /*Utilities*/

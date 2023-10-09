@@ -10,12 +10,12 @@ function sendMail() {
 
   emailjs
     .send(serviceID, templateID, params)
-    .then((res) => {
+    .then(function (res) {
       document.getElementById("name").value = "";
       document.getElementById("email").value = "";
       document.getElementById("message").value = "";
       console.log(res);
-      alert("Your message sent successfully!");
+      // alert("Your message sent successfully!");
     })
     .catch((err) => console.log(err));
 }
