@@ -4,25 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
     />
   </head>
-    <header>
-      <div class="header">
-        <img src="./assets/img/svg/logo.svg" alt="Rob Logo" />
-        <a href="./contact.html"><button class="btn-secondary">Say Hello</button></a>
+  <nav>
+    <div class="nav-center">
+      <div class="nav-header">
+        <img  src="./assets/img/svg/logo.svg" alt="Rob Logo" />
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+        </svg>
       </div>
-    </header>
-    <section class="hero center">
-      <h1>Design, Frontend Development</h1>
-      <p>Bringing Ideas to life</p>
+      <ul class="links center">
+        <!-- <li><a id="home" href="">Home</a></li> -->
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <a  href="./contact.html" style="margin-left: 0; margin-right: 0;">
+          <button class="btn-secondary btn-none">Say Hello</button>
+        </a>
+      </ul>
+      <a href="./contact.html"><button class="btn-secondary n1">Say Hello</button></a>
+      <button class="btn-top none">Top</button>
+    </div>
+  </nav>
+  <section class="hero center">
+      <h2>Frontend Development</h2>
+      <h5>Bringing Ideas to life</h5>
       <img class="avatar" src="./assets/img/svg/Avatar.svg" alt="Rob Avatar" />
       <br />
       <img
@@ -33,12 +48,12 @@
     </section>
     <section class="introduction">
       <div class="title-introduction center">
-        <h2>Hi, I’m Roberto. Nice to meet you.</h2>
+        <h3>Hi, I'm Roberto. Nice to meet you.</h3>
         <p>
           I'm a multipotentialite, I have many different interests and creative pursuits in life.
           <br />
           My goal as a web developer is to create software solutions that match
-          my clients’ needs and expectations. My workflow is based on analytics
+          my clients' needs and expectations. My workflow is based on analytics
           and agile methodology that helps me provide high-quality IT services
           to small businesses and startups.
         </p>
@@ -48,10 +63,12 @@
       <div class="skills center">
         <div>
           <img src="./assets/img/svg/skillsIcon.svg" alt="Skills Icon" />
-          <h3>Skills</h3>
-          <h4>Languages I speak:</h4>
+          <h4>Skills</h4>
+          <br>
+          <h5>Languages I speak:</h5>
           <p>HTML, CSS, JavaScript, Git</p>
-          <h4>Dev Tools:</h4>
+          <br>
+          <h5>Dev Tools:</h5>
           <ul>
             <li>VS Code</li>
             <li>Bootstrap</li>
@@ -61,10 +78,12 @@
         </div>
         <div>
           <img src="./assets/img/svg/servicesIcon.svg" alt="Services Icon" />
-          <h3>Services</h3>
-          <h4>Web Development:</h4>
+          <h4>Services</h4>
+          <br>
+          <h5>Web Development:</h5>
           <p>One-page sites, Complex websites</p>
-          <h4>Design</h4>
+          <br>
+          <h5>Design:</h5>
           <ul>
             <li>UX</li>
             <li>UI</li>
@@ -77,9 +96,9 @@
         </span>
     </div>
     </section>
-    <section class="container-development">
-      <div class="title-development">
-        <h2>Development Services</h2>
+    <section id="services" class="container-development">
+      <div class="title-development center">
+        <h3>Development Services</h3>
         <p>Some of the things I bring to the table.</p>
       </div>
       <div class="development">
@@ -89,7 +108,7 @@
         </div>
           <div class="card">
             <div>
-              <h3>Website and Platforms</h3>
+              <h4>Website and Platforms</h4>
             <p>
               With the technical solutions I offer, you can get digital products
               created specifically for your business aim. I develop landing pages,
@@ -98,9 +117,9 @@
               <p>I develop landing pages, one-page sites and complex websites.</p>
             </div>
             <div>
-              <h3>Design Concept</h3>
+              <h4>Design Concept</h4>
               <p>
-              I’ll dive deep and create a design concept that will become a solid
+              I'll dive deep and create a design concept that will become a solid
               foundation for the future digital product. Well-built design helps
               turn awesome ideas into attractive and eye-catching sites.
               </p>
@@ -109,9 +128,9 @@
         </div>
       </div>
     </section>
-    <section class="introduction center">
+    <section id="projects" class="introduction center">
       <div class="title-introduction">
-        <h2>My Recent Work</h2>
+        <h3>My Recent Work</h3>
         <p>
           Take a look at some projects that I have implemented. Want to see
           more?
@@ -122,85 +141,71 @@
       <section class="container-work center">
         <div class="work">
           <div>
-            <figure>
-              <img src="" alt="" />
-              <figcaption>
-                <p>1</p>
-                <button><a href="">Visit Website ></a></button>
+            <figure id="parent">
+              <figcaption class="absolute-container">
+                <img id="modal" class="modal-image" src="https://images.unsplash.com/photo-1556125574-d7f27ec36a06?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="placeholder" />
+                <div class="absolute">
+                  <h3>KairosDays</h3>
+                  <a href="https://mrtetif.github.io/KairosDays/">Visit Website ></a>
+                </div>
               </figcaption>
             </figure>
           </div>
           <div>
-            <figure>
-              <img src="" alt="" />
-              <figcaption>
-                <p>2</p>
-                <button><a href="">Visit Website ></a></button>
+            <figure id="parent">
+              <figcaption class="absolute-container">
+                <img id="modal" class="modal-image" src="https://images.unsplash.com/photo-1416339134316-0e91dc9ded92?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="placeholder" />
+                <div class="absolute">
+                  <h3>Esspectre</h3>
+                  <a href="https://mrtetif.github.io/Spectre/">Visit Website ></a>
+                </div>
               </figcaption>
             </figure>
           </div>
           <div>
-            <figure>
-              <img src="" alt="" />
-              <figcaption>
-                <p>3</p>
-                <button><a href="">Visit Website ></a></button>
-              </figcaption>
-            </figure>
-          </div>
-          <div>
-            <figure>
-              <img src="" alt="" />
-              <figcaption>
-                <p>4</p>
-                <button><a href="">Visit Website ></a></button>
-              </figcaption>
-            </figure>
-          </div>
-          <div>
-            <figure>
-              <img src="" alt="" />
-              <figcaption>
-                <p>5</p>
-                <button><a href="">Visit Website ></a></button>
-              </figcaption>
-            </figure>
-          </div>
-          <div>
-            <figure>
-              <img src="" alt="" />
-              <figcaption>
-                <p>6</p>
-                <button><a href="">Visit Website ></a></button>
+            <figure id="parent">
+              <figcaption class="absolute-container">
+                <img id="modal" class="modal-image" src="https://plus.unsplash.com/premium_photo-1683140941523-f1fbbabe54d5?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="placeholder" />
+                <div class="absolute">
+                  <h3>Comming Soon</h3>
+                  <a href="#">Visit Website ></a>
+                </div>
               </figcaption>
             </figure>
           </div>
         </div>
         <span>
           <h3>Interested in working with me?</h3>
-          <p>I’m always open to discussing product development opportunities.</p>
+          <p>I'm always open to discussing product development opportunities.</p>
           <a href="./contact.html"><button class="btn l center">Start a conversation</button></a>
         </span>
       </section>
     <section class="container-development">
       <div class="title-introduction center">
-        <h2>Testimonials</h2>
+        <h3>Testimonials</h3>
         <p>People I've worked with have said some nice things...</p>
         <div class="circle">
-          <img src="./assets/img/CN_Foto.png" alt="Cristina Navarro">
+          <img src="./assets/img/CN_Foto.png" id="img" alt="Cristina Navarro">
         </div>
       </div>
       <div class="comments center">
-        <p>
-          “He’s definitely the kind of developer you can trust with a project
+        <p id="text">
+          “He's definitely the kind of developer you can trust with a project
           from start to finish.”
         </p>
-        <h4>Cristina Navarro</h4>
-        <blockquote>CEO - Kairos Events</blockquote>
-        <div>
-          <div></div>
-          <div></div>
-        </div>
+        <h5 id="name-person">Cristina Navarror</h5>
+        <blockquote id="title">CEO - Kairos Events</blockquote>
+        <br />
+
+        <button class="previus"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"/>
+        </svg>
+
+        </button>
+        <button class="next"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+        </svg>
+      </button>
       </div>
     </section>
     <section class="footer-container center">
@@ -224,11 +229,12 @@
               <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
               </svg>
             </a>
-          <h4>Roberto Merani</h4>
+          <h5><strong>Roberto Merani</strong></h5>
         <small>
-          This site has been developed using best practices and you’re welcome
-          to check my code by pressing F12
+          &copy2024 all rights reserved
         </small>
+        </div>
     </section>
+    <script type="text/javascript" src="./index.js"></script>
   </body>
 </html>
