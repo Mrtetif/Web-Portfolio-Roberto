@@ -118,6 +118,7 @@ navToggle.addEventListener('click', function () {
 ===============
 */
 
+const navBar = document.getElementById('home');
 const scrollLink = document.querySelectorAll('.scroll-link');
 
 scrollLink.forEach(function (link) {
@@ -128,13 +129,15 @@ scrollLink.forEach(function (link) {
     const id = e.currentTarget.getAttribute('href').slice(1);
     const element = document.getElementById(id);
     // calculate the heights
+    const navHeight = navBar.getBoundingClientRect().height;
+    const containerHeight = linksContainer.getBoundingClientRect().height;
 
-    let position = element.offsetTop;
+    let position = element.offsetTop - navHeight + containerHeight;
     window.scrollTo({
       left: 0,
       top: position,
     });
-    // linksContainer.style.height = 0;
+    linksContainer.style.height = 0;
   });
 });
 
