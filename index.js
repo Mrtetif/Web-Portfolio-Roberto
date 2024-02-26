@@ -72,20 +72,38 @@ prevBtn.addEventListener('click', function () {
 });
 
 /*
+=========
+  DATE
+=========
+*/
+
+const date = document.getElementById('date');
+date.innerHTML = new Date().getFullYear();
+
+/*
 ============
   TOGGLE
 ============
 */
 
-const toggle = document.querySelector('.bi-list');
+const navToggle = document.querySelector('.btn-toogle');
+const linksContainer = document.querySelector('.links-container');
 const links = document.querySelector('.links');
 
-toggle.addEventListener('click', function () {
-  if (links.classList.contains('show-links')) {
-    links.classList.remove('show-links');
+navToggle.addEventListener('click', function () {
+  // if (linksContainer.classList.contains('show-links')) {
+  //   linksContainer.classList.remove('show-links');
+  // } else {
+  //   linksContainer.classList.add('show-links');
+  // }
+  const containerHeight = linksContainer.getBoundingClientRect().height;
+  const linksHeight = links.getBoundingClientRect().height;
+  if (containerHeight === 0) {
+    linksContainer.style.height = `${linksHeight}px`;
   } else {
-    links.classList.add('show-links');
+    linksContainer.style.height = 0;
   }
+  console.log(linksHeight);
 });
 
 /*
@@ -99,6 +117,26 @@ toggle.addEventListener('click', function () {
   BACK TO TOP
 ===============
 */
+
+const scrollLink = document.querySelectorAll('.scroll-link');
+
+scrollLink.forEach(function (link) {
+  link.addEventListener('click', function (e) {
+    // prevent default
+    e.preventDefault();
+    // navigate to specific spot
+    const id = e.currentTarget.getAttribute('href').slice(1);
+    const element = document.getElementById(id);
+    // calculate the heights
+
+    let position = element.offsetTop;
+    window.scrollTo({
+      left: 0,
+      top: position,
+    });
+    // linksContainer.style.height = 0;
+  });
+});
 
 const btnTop = document.querySelector('.btn-top');
 const docScroll = document.body.scrollTop;

@@ -8,34 +8,33 @@
     <link rel="stylesheet" href="./main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   </head>
   <nav>
     <div class="nav-center">
       <div class="nav-header">
         <img  src="./assets/img/svg/logo.svg" alt="Rob Logo" />
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-        </svg>
+        <button class="btn-toogle"><i class="fas fa-align-justify"></i></button>
       </div>
-      <ul class="links center">
-        <!-- <li><a id="home" href="">Home</a></li> -->
-        <li><a href="#services">Services</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <a  href="./contact.html" style="margin-left: 0; margin-right: 0;">
-          <button class="btn-secondary btn-none">Say Hello</button>
-        </a>
-      </ul>
+      <div class="links-container">
+        <ul class="links center">
+          <!-- <li><a id="home" href="">Home</a></li> -->
+          <li><a href="#services" class="scroll-link">Services</a></li>
+          <li><a href="#projects" class="scroll-link">Projects</a></li>
+          <a  href="./contact.html" style="margin-left: 0; margin-right: 0;">
+            <button class="btn-secondary btn-none">Say Hello</button>
+          </a>
+        </ul>
+      </div>
       <a href="./contact.html"><button class="btn-secondary n1">Say Hello</button></a>
       <button class="btn-top none">Top</button>
     </div>
   </nav>
-  <section class="hero center">
+  <section id="home" class="hero center">
       <h2>Frontend Development</h2>
       <h5>Bringing Ideas to life</h5>
       <img class="avatar" src="./assets/img/svg/Avatar.svg" alt="Rob Avatar" />
@@ -231,7 +230,7 @@
             </a>
           <h5><strong>Roberto Merani</strong></h5>
         <small>
-          &copy2024 all rights reserved
+          &copy<span id="date"></span>. All rights reserved
         </small>
         </div>
     </section>
